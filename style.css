@@ -10,3 +10,78 @@ body {
 }
 
 /* Add styles here! */
+
+html {
+  /* mudando a base font */
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.max-width-wrapper {
+  /* Moldando página */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px; /* Help with space in a mobile */ 
+}
+
+.intro-chunk {
+  padding: 96px 0 48px;
+  /* left aling  */
+  max-width: 400px;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%)
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 96px 0;
+}
+
+.card {
+  background-color: white;
+  padding: 24px;
+  /* garantee vertical align trick */
+  margin-left: -24px;
+
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+
+  margin-left: -32px; /* anulando padding e deslocando header */
+  margin-top: -16px /* to have a 8px space (.card padding) */;
+  padding: 16px 32px;
+
+  width: fit-content;
+
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.card p:last-child {
+  margin-bottom: 0; /* Overide browser default syle (built-in) */ 
+}
